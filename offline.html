@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id-ID">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Anda Sedang Offline — ChatTeman</title>
+  <meta name="description" content="Koneksi internet terputus. Coba lagi untuk melanjutkan menggunakan ChatTeman." />
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="offline-page">
+    <div class="offline-card">
+      <img src="/icons/icon-192.png" alt="Logo ChatTeman" width="88" height="88" />
+      <span class="offline-status">
+        <span class="offline-status__dot" aria-hidden="true"></span>
+        Status: Offline
+      </span>
+      <h1>Koneksi Terputus</h1>
+      <p>
+        Sepertinya Anda sedang tidak terhubung ke internet. Periksa koneksi
+        Wi-Fi atau data seluler Anda, lalu coba lagi.
+      </p>
+      <button type="button" class="btn btn-primary" id="retry-btn">
+        Coba Lagi
+      </button>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("retry-btn").addEventListener("click", function () {
+      window.location.reload();
+    });
+
+    // Otomatis muat ulang saat koneksi kembali
+    window.addEventListener("online", function () {
+      window.location.reload();
+    });
+  </script>
+</body>
+</html>

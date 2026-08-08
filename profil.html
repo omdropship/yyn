@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id-ID">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Profil Saya | ChatTeman</title>
+  <meta name="description" content="Kelola profil, foto, dan preferensi akun ChatTeman Anda." />
+  <meta name="keywords" content="chatteman, profil, akun, pengaturan pengguna" />
+  <meta name="author" content="ChatTeman" />
+  <meta name="robots" content="noindex, follow" />
+
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="color-scheme" content="light" />
+  <link rel="manifest" href="/manifest.json" />
+
+  <link rel="canonical" href="{{BASE_URL}}/profil.html" />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2563eb" />
+  <meta name="msapplication-TileColor" content="#2563eb" />
+  <meta name="msapplication-config" content="/browserconfig.xml" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="ChatTeman" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:site_name" content="ChatTeman" />
+  <meta property="og:title" content="Profil Saya | ChatTeman" />
+  <meta property="og:description" content="Kelola profil, foto, dan preferensi akun ChatTeman Anda." />
+  <meta property="og:url" content="{{BASE_URL}}/profil.html" />
+  <meta property="og:image" content="{{BASE_URL}}/icons/icon-512.png" />
+  <meta property="og:locale" content="id_ID" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Profil Saya | ChatTeman" />
+  <meta name="twitter:description" content="Kelola profil, foto, dan preferensi akun ChatTeman Anda." />
+  <meta name="twitter:image" content="{{BASE_URL}}/icons/icon-512.png" />
+
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self';" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <script type="application/ld+json" id="structured-data">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "name": "Profil Saya",
+    "description": "Kelola profil, foto, dan preferensi akun ChatTeman Anda.",
+    "url": "{{BASE_URL}}/profil.html",
+    "inLanguage": "id-ID"
+  }
+  </script>
+
+  <link rel="preconnect" href="{{BASE_URL}}" crossorigin />
+  <link rel="dns-prefetch" href="{{BASE_URL}}" />
+  <link rel="preload" href="/style.css" as="style" />
+
+  <link rel="stylesheet" href="/style.css" />
+
+  <script>
+    window.PAGE_META = {
+      path: "/profil.html",
+      title: "Profil Saya | ChatTeman",
+      description: "Kelola profil, foto, dan preferensi akun ChatTeman Anda.",
+      image: "/icons/icon-512.png",
+      schemaType: "ProfilePage"
+    };
+  </script>
+</head>
+<body>
+  <a class="visually-hidden" href="#main-content">Lewati ke konten utama</a>
+
+  <header class="app-header">
+    <p class="app-header__title">Profil</p>
+    <button type="button" id="pwa-install-btn" class="btn btn-primary" hidden aria-label="Instal aplikasi ChatTeman">
+      Instal
+    </button>
+  </header>
+
+  <main id="main-content" class="app-main">
+    <h1 class="visually-hidden">Profil Saya</h1>
+
+    <section class="card" aria-labelledby="profile-title">
+      <img src="/icons/icon-96.png" alt="Foto profil pengguna" width="64" height="64" loading="lazy" decoding="async" />
+      <h2 id="profile-title" class="card__title">Nama Pengguna</h2>
+      <p class="card__subtitle">Lengkapi profilmu agar lebih mudah ditemukan teman baru.</p>
+    </section>
+
+    <section aria-labelledby="settings-title">
+      <h2 id="settings-title" class="visually-hidden">Pengaturan akun</h2>
+      <article class="card">
+        <h3 class="card__title">Pengaturan</h3>
+        <p class="card__subtitle">Kelola privasi, notifikasi, dan preferensi lokasi.</p>
+      </article>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Navigasi utama">
+    <a class="bottom-nav__item" href="index.html">Home</a>
+    <a class="bottom-nav__item" href="nearby.html">Nearby</a>
+    <a class="bottom-nav__item" href="pesan.html">Pesan</a>
+    <a class="bottom-nav__item" href="profil.html" aria-current="page">Profil</a>
+  </nav>
+
+  <script src="/config.js" defer></script>
+  <script src="/seo.js" defer></script>
+  <script src="/main.js" defer></script>
+  <script src="/sw-register.js" defer></script>
+  <script src="/pwa-install.js" defer></script>
+  <script src="/pwa-update.js" defer></script>
+</body>
+</html>

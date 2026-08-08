@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id-ID">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>ChatTeman — Temukan Teman Baru di Sekitarmu</title>
+  <meta name="description" content="ChatTeman adalah platform sosial berbasis lokasi untuk menemukan dan mengobrol dengan teman baru di sekitarmu." />
+  <meta name="keywords" content="chatteman, cari teman, teman dekat, chat online, sosial lokasi, aplikasi pertemanan" />
+  <meta name="author" content="ChatTeman" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Theme & PWA -->
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="color-scheme" content="light" />
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="{{BASE_URL}}/index.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2563eb" />
+  <meta name="msapplication-TileColor" content="#2563eb" />
+  <meta name="msapplication-config" content="/browserconfig.xml" />
+
+  <!-- Apple Web App -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="ChatTeman" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ChatTeman" />
+  <meta property="og:title" content="ChatTeman — Temukan Teman Baru di Sekitarmu" />
+  <meta property="og:description" content="Platform sosial berbasis lokasi untuk menemukan dan mengobrol dengan teman baru di sekitarmu." />
+  <meta property="og:url" content="{{BASE_URL}}/index.html" />
+  <meta property="og:image" content="{{BASE_URL}}/icons/icon-512.png" />
+  <meta property="og:locale" content="id_ID" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ChatTeman — Temukan Teman Baru di Sekitarmu" />
+  <meta name="twitter:description" content="Platform sosial berbasis lokasi untuk menemukan dan mengobrol dengan teman baru di sekitarmu." />
+  <meta name="twitter:image" content="{{BASE_URL}}/icons/icon-512.png" />
+
+  <!-- Security (lihat juga _headers / .htaccess / vercel.json untuk header HTTP) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self';" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <!-- Structured Data (fallback statis; disempurnakan oleh seo.js) -->
+  <script type="application/ld+json" id="structured-data">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ChatTeman",
+    "description": "Platform sosial berbasis lokasi untuk menemukan dan mengobrol dengan teman baru di sekitarmu.",
+    "url": "{{BASE_URL}}/index.html",
+    "inLanguage": "id-ID"
+  }
+  </script>
+
+  <!-- Preconnect / DNS Prefetch (aktifkan jika memakai domain aset/API eksternal) -->
+  <link rel="preconnect" href="{{BASE_URL}}" crossorigin />
+  <link rel="dns-prefetch" href="{{BASE_URL}}" />
+  <link rel="preload" href="/style.css" as="style" />
+  <link rel="preload" href="/icons/icon-192.png" as="image" />
+
+  <link rel="stylesheet" href="/style.css" />
+
+  <script>
+    window.PAGE_META = {
+      path: "/index.html",
+      title: "ChatTeman — Temukan Teman Baru di Sekitarmu",
+      description: "Platform sosial berbasis lokasi untuk menemukan dan mengobrol dengan teman baru di sekitarmu.",
+      image: "/icons/icon-512.png",
+      schemaType: "WebSite"
+    };
+  </script>
+</head>
+<body>
+  <a class="visually-hidden" href="#main-content">Lewati ke konten utama</a>
+
+  <header class="app-header">
+    <p class="app-header__title">ChatTeman</p>
+    <button type="button" id="pwa-install-btn" class="btn btn-primary" hidden aria-label="Instal aplikasi ChatTeman">
+      Instal
+    </button>
+  </header>
+
+  <main id="main-content" class="app-main">
+    <h1 class="visually-hidden">Beranda ChatTeman</h1>
+
+    <section class="card" aria-labelledby="welcome-title">
+      <h2 id="welcome-title" class="card__title">Selamat datang di ChatTeman</h2>
+      <p class="card__subtitle">Temukan teman baru berdasarkan lokasimu dan mulai mengobrol.</p>
+    </section>
+
+    <section aria-labelledby="feed-title">
+      <h2 id="feed-title" class="visually-hidden">Aktivitas terbaru</h2>
+      <article class="card">
+        <img src="/icons/icon-96.png" alt="Ikon ChatTeman" width="48" height="48" loading="lazy" decoding="async" />
+        <h3 class="card__title">Mulai jelajahi</h3>
+        <p class="card__subtitle">Buka halaman Nearby untuk melihat pengguna di sekitarmu.</p>
+      </article>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Navigasi utama">
+    <a class="bottom-nav__item" href="index.html" aria-current="page">Home</a>
+    <a class="bottom-nav__item" href="nearby.html">Nearby</a>
+    <a class="bottom-nav__item" href="pesan.html">Pesan</a>
+    <a class="bottom-nav__item" href="profil.html">Profil</a>
+  </nav>
+
+  <script src="/config.js" defer></script>
+  <script src="/seo.js" defer></script>
+  <script src="/main.js" defer></script>
+  <script src="/sw-register.js" defer></script>
+  <script src="/pwa-install.js" defer></script>
+  <script src="/pwa-update.js" defer></script>
+</body>
+</html>

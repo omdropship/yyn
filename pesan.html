@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id-ID">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Pesan | ChatTeman</title>
+  <meta name="description" content="Lihat dan balas pesan dari teman-teman ChatTeman Anda." />
+  <meta name="keywords" content="chatteman, pesan, obrolan, chat, inbox" />
+  <meta name="author" content="ChatTeman" />
+  <meta name="robots" content="noindex, follow" />
+
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="color-scheme" content="light" />
+  <link rel="manifest" href="/manifest.json" />
+
+  <link rel="canonical" href="{{BASE_URL}}/pesan.html" />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2563eb" />
+  <meta name="msapplication-TileColor" content="#2563eb" />
+  <meta name="msapplication-config" content="/browserconfig.xml" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="ChatTeman" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ChatTeman" />
+  <meta property="og:title" content="Pesan | ChatTeman" />
+  <meta property="og:description" content="Lihat dan balas pesan dari teman-teman ChatTeman Anda." />
+  <meta property="og:url" content="{{BASE_URL}}/pesan.html" />
+  <meta property="og:image" content="{{BASE_URL}}/icons/icon-512.png" />
+  <meta property="og:locale" content="id_ID" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pesan | ChatTeman" />
+  <meta name="twitter:description" content="Lihat dan balas pesan dari teman-teman ChatTeman Anda." />
+  <meta name="twitter:image" content="{{BASE_URL}}/icons/icon-512.png" />
+
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self';" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <script type="application/ld+json" id="structured-data">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Pesan",
+    "description": "Lihat dan balas pesan dari teman-teman ChatTeman Anda.",
+    "url": "{{BASE_URL}}/pesan.html",
+    "inLanguage": "id-ID"
+  }
+  </script>
+
+  <link rel="preconnect" href="{{BASE_URL}}" crossorigin />
+  <link rel="dns-prefetch" href="{{BASE_URL}}" />
+  <link rel="preload" href="/style.css" as="style" />
+
+  <link rel="stylesheet" href="/style.css" />
+
+  <script>
+    window.PAGE_META = {
+      path: "/pesan.html",
+      title: "Pesan | ChatTeman",
+      description: "Lihat dan balas pesan dari teman-teman ChatTeman Anda.",
+      image: "/icons/icon-512.png",
+      schemaType: "WebPage"
+    };
+  </script>
+</head>
+<body>
+  <a class="visually-hidden" href="#main-content">Lewati ke konten utama</a>
+
+  <header class="app-header">
+    <p class="app-header__title">Pesan</p>
+    <button type="button" id="pwa-install-btn" class="btn btn-primary" hidden aria-label="Instal aplikasi ChatTeman">
+      Instal
+    </button>
+  </header>
+
+  <main id="main-content" class="app-main">
+    <h1 class="visually-hidden">Pesan</h1>
+
+    <section aria-labelledby="inbox-title">
+      <h2 id="inbox-title" class="visually-hidden">Kotak masuk</h2>
+      <article class="card">
+        <img src="/icons/icon-96.png" alt="Ikon percakapan" width="48" height="48" loading="lazy" decoding="async" />
+        <h3 class="card__title">Belum ada percakapan</h3>
+        <p class="card__subtitle">Mulai mengobrol dengan teman baru dari halaman Nearby.</p>
+      </article>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Navigasi utama">
+    <a class="bottom-nav__item" href="index.html">Home</a>
+    <a class="bottom-nav__item" href="nearby.html">Nearby</a>
+    <a class="bottom-nav__item" href="pesan.html" aria-current="page">Pesan</a>
+    <a class="bottom-nav__item" href="profil.html">Profil</a>
+  </nav>
+
+  <script src="/config.js" defer></script>
+  <script src="/seo.js" defer></script>
+  <script src="/main.js" defer></script>
+  <script src="/sw-register.js" defer></script>
+  <script src="/pwa-install.js" defer></script>
+  <script src="/pwa-update.js" defer></script>
+</body>
+</html>

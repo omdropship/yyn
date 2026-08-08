@@ -1,0 +1,22 @@
+# ChatTeman — contoh konfigurasi Nginx (sisipkan di dalam blok server { })
+
+add_header X-Content-Type-Options "nosniff" always;
+add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+add_header Permissions-Policy "geolocation=(self), camera=(), microphone=()" always;
+add_header X-Frame-Options "DENY" always;
+
+location = /sw.js {
+  add_header Cache-Control "no-cache";
+  default_type application/javascript;
+}
+
+location = /manifest.json {
+  default_type application/manifest+json;
+}
+
+location ~* \.(png|jpg|jpeg|svg|webp|ico)$ {
+  expires 1y;
+  add_header Cache-Control "public, immutable";
+}
+
+error_page 404 /offline.html;
